@@ -229,7 +229,7 @@ export default function App() {
       <section id="about" className="py-20 px-6 bg-gray-50 text-center">
         <h2 className="text-4xl font-bold text-blue-950 mb-6">About Me</h2>
         <p className="max-w-3xl mx-auto mb-3 text-lg text-gray-700">
-          A highly skilled Web Developer and Creative Graphic Designer with a passion for building modern, functional, and visually engaging digital experiences.
+          A highly skilled Front-End Developer and Creative Graphic Designer with a passion for building modern, functional, and visually engaging digital experiences.
         </p> 
         <p className="max-w-3xl mx-auto mb-3 text-lg text-gray-700">
           With expertise in front-end and back-end development, I craft responsive, user-friendly websites that deliver seamless performance across all devices. Beyond code, I bring strong creative direction to every project, blending design and technology to produce graphics and interfaces that not only look great but also communicate effectively.
@@ -307,7 +307,7 @@ export default function App() {
 
 
           <div className="p-6 border rounded-xl shadow hover:shadow-lg transition bg-white">
-            <h3 className="text-2xl font-semibold mb-2">Wuraola Royal Farm</h3>
+            <h3 className="text-2xl font-semibold mb-2">MarvelMarts Shopping </h3>
             <p className="text-gray-700 mb-4">
               An online shopping platform with a clean design, product showcase, and user-friendly experience.
             </p>
