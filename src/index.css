@@ -46,7 +46,7 @@ html {
 .carpet-panel {
   width: 100%;
   max-width: 720px; /* keeps it readable on wide phones */
-  background: linear-gradient(180deg, rgba(3,105,63,0.98), rgba(6,78,59,0.98));
+  background: linear-gradient(180deg, var(--color-blue-900), var(--color-amber-300));
   color: white;
   padding: 3.5rem 1.25rem;
   box-shadow: 0 20px 40px rgba(2,6,23,0.45);

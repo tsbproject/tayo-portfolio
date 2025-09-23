@@ -133,7 +133,7 @@ export default function App() {
             <button
               onClick={() => setMobileOpen(true)}
               aria-label="Open menu"
-              className="p-2 rounded-md text-gray-800 hover:bg-gray-100 transition"
+              className="p-2 rounded-md text-gray-50 hover:bg-gray-100 transition"
             >
               <GiHamburgerMenu size={22} />
             </button>
@@ -144,7 +144,7 @@ export default function App() {
       {/* ===== Mobile Carpet Overlay ===== */}
       {mobileOpen && (
         <div className="mobile-overlay">
-          <div className={`carpet ${closing ? "carpet-hide" : ""} carpet-panel`}>
+          <div className={`carpet  ${closing ? "carpet-hide " : ""} carpet-panel `}>
             {/* close btn */}
             <button onClick={closeMobile} className="mobile-close" aria-label="Close menu">
               <IoClose size={24} />
@@ -180,7 +180,7 @@ export default function App() {
                 href="/mySamuelCV_2xNew.pdf"
                 download
                 onClick={closeMobile}
-                className="inline-block bg-green-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-green-700 transition"
+                className="inline-block bg-blue-900 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-700 transition"
               >
                 Download Resume
               </a>
