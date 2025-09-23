@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+/* ---------- Carpet reveal animation ---------- */
+.carpet {
+  transform-origin: top;
+  transform: scaleY(0);
+  animation: carpetReveal 700ms cubic-bezier(.2,.9,.2,1) forwards;
+  will-change: transform, opacity;
+}
+
+@keyframes carpetReveal {
+  from { transform: scaleY(0); opacity: 0; }
+  60%  { transform: scaleY(1.05); opacity: 1; } /* slight overshoot for organic feel */
+  to   { transform: scaleY(1); opacity: 1; }
+}
+
+.carpet-hide {
+  transform-origin: top;
+  animation: carpetHide 420ms cubic-bezier(.2,.9,.2,1) forwards;
+}
+
+@keyframes carpetHide {
+  from { transform: scaleY(1); opacity: 1; }
+  to   { transform: scaleY(0); opacity: 0; }
+}
+
+/* Mobile overlay base */
+.mobile-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 60; /* above header */
+  display: flex;
+  align-items: flex-start; /* start at top so transform-origin top looks natural */
+  justify-content: center;
+  pointer-events: auto;
+}
+
+/* The carpet panel (centered horizontally, full width on mobile) */
+.carpet-panel {
+  width: 100%;
+  max-width: 720px; /* keeps it readable on wide phones */
+  background: linear-gradient(180deg, rgba(3,105,63,0.98), rgba(6,78,59,0.98));
+  color: white;
+  padding: 3.5rem 1.25rem;
+  box-shadow: 0 20px 40px rgba(2,6,23,0.45);
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  transform-origin: top;
+}
+
+/* menu items fade+slide */
+.menu-item {
+  opacity: 0;
+  transform: translateY(-8px);
+  animation: itemFadeUp 420ms ease forwards;
+}
+
+@keyframes itemFadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* optional close button styling */
+.mobile-close {
+  position: absolute;
+  right: 1rem;
+  top: 0.9rem;
+  background: transparent;
+  color: white;
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 0.35rem 0.5rem;
+  border-radius: 8px;
+}
+
+/* Smooth scrolling (global) */
+html { scroll-behavior: smooth; }
+
+/* small tweak so fixed header doesn't overlay section headers (if using scroll-mt helpers) */
+.scroll-offset { scroll-margin-top: 4.5rem; }
+
