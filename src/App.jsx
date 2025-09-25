@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube, FaTiktok } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube, FaTiktok, FaLinkedin } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 
@@ -92,20 +92,20 @@ export default function App() {
 
           {/* Social Media (hidden on small devices) */}
           <div className="hidden md:flex items-center space-x-2 text-blue-400">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 border-2 border-blue-400 hover:border-blue-300 rounded-full p-1.5 transition">
+            {/* <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 border-2 border-blue-400 hover:border-blue-300 rounded-full p-1.5 transition">
               <FaFacebookF size={16} />
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 border-2 border-blue-400 hover:border-blue-300 rounded-full p-1.5 transition">
+            </a> */}
+            <a href="https://instagram.com/tayo_bolarinwa" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 border-2 border-blue-400 hover:border-blue-300 rounded-full p-1.5 transition">
               <FaInstagram size={16} />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 border-2 border-blue-400 hover:border-blue-300 rounded-full p-1.5 transition">
+            <a href="https://x.com/tsbolarinwa" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 border-2 border-blue-400 hover:border-blue-300 rounded-full p-1.5 transition">
               <FaTwitter size={16} />
             </a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 border-2 border-blue-400 hover:border-blue-300 rounded-full p-1.5 transition">
+            {/* <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 border-2 border-blue-400 hover:border-blue-300 rounded-full p-1.5 transition">
               <FaYoutube size={16} />
-            </a>
-            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 border-2 border-blue-400 hover:border-blue-300 rounded-full p-1.5 transition">
-              <FaTiktok size={16} />
+            </a> */}
+            <a href="https://www.linkedin.com/in/tayo-bolarinwa-a6b1252a5/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 border-2 border-blue-400 hover:border-blue-300 rounded-full p-1.5 transition">
+              <FaLinkedin size={16} />
             </a>
           </div>
 
