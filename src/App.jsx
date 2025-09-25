@@ -305,6 +305,22 @@ export default function App() {
             </a>
           </div>
 
+          <div className="p-6 border rounded-xl shadow hover:shadow-lg transition bg-white">
+            <h3 className="text-2xl font-semibold mb-2">Candidate-Manager-(WordPress-Plugin)</h3>
+            <p className="text-gray-700 mb-4">
+              A professional WordPress plugin for managing candidate applications with a 
+              styled frontend form, secure uploads, and an admin dashboard.
+            </p>
+            <div className=" flex flex-wrap text-md text-blue-950 font-bold">HTML | CSS | PHP |JAVASCRIPT</div>
+            <div className=" object-cover">
+              <img src="/form-preview-small.PNG" />
+            </div>
+            <a href="https://github.com/tsbproject/Candidate-Manager-WordPress-Plugin" target="_blank" 
+             rel="noopener noreferrer" className="text-blue-950 font-semibold hover:underline">
+              View Project →
+            </a>
+          </div>
+
 
           <div className="p-6 border rounded-xl shadow hover:shadow-lg transition bg-white">
             <h3 className="text-2xl font-semibold mb-2">MarvelMarts Shopping </h3>
@@ -316,6 +332,21 @@ export default function App() {
               <img src="/marvelmarts.PNG" />
             </div>
             <a href="https://marvelmarts.com" target="_blank" 
+             rel="noopener noreferrer" className="text-blue-950 font-semibold hover:underline">
+              View Project →
+            </a>
+          </div>
+
+          <div className="p-6 border rounded-xl shadow hover:shadow-lg transition bg-white">
+            <h3 className="text-2xl font-semibold mb-2">MyDuduke Dating </h3>
+            <p className="text-gray-700 mb-4">
+              A modern dating site focused on connection, matching, and user profiles built for mobile-first experience.
+            </p>
+            <div className=" flex flex-wrap text-md text-blue-950 font-bold">HTML | CSS | WORDPRESS | JAVASCRIPT</div>
+            <div className=" object-cover">
+              <img src="/myduduke.PNG" />
+            </div>
+            <a href="https://myduduke.com" target="_blank" 
              rel="noopener noreferrer" className="text-blue-950 font-semibold hover:underline">
               View Project →
             </a>
