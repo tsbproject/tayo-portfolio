@@ -299,7 +299,7 @@ export default function App() {
             <div className=" object-cover">
               <img src="/mcmedia.PNG" />
             </div>
-            <a href="https://marvelcmedia.com" target="_blank" 
+            <a href="https://marvelcmedia.vercel.app" target="_blank" 
              rel="noopener noreferrer" className="text-blue-950 font-semibold hover:underline">
               View Project →
             </a>
