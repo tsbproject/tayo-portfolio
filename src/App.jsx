@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube, FaTiktok, FaLinkedin } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Helmet } from 'react-helmet';
+
 import { IoClose } from "react-icons/io5";
 
 export default function App() {
@@ -79,6 +81,23 @@ export default function App() {
   };
 
   return (
+       <>
+      <Helmet>
+        <title>Tayo Bolarinwa | Frontend Web Developer</title>
+        <meta name="description" content="Creative frontend developer and WordPress expert building modern, high-impact, responsive websites and Applications for Brands That Dare to Stand Out in Lagos Nigeria." />
+        <meta property="og:title" content="Tayo Bolarinwa Portfolio" />
+        <meta property="og:description" content="Explore my projects and skills in web development and design." />
+        <meta property="og:image" content="https://tayobolarinwa.dev/preview.jpg" />
+        <meta property="og:url" content="https://tayobolarinwa.dev" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
+      {/* Your page content */}
+    
+
+
+
+
+
     <div className="font-sans text-gray-900">
       {/* ===== Header ===== */}
       <header className="fixed top-0 left-0 w-full bg-blue-950/80 shadow-md z-10">
@@ -448,6 +467,7 @@ export default function App() {
         .animate-shake { animation: shake 0.4s ease-in-out; }
       `}</style>
     </div>
+    </>
   );
 }
 
