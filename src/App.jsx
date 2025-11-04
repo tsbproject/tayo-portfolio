@@ -139,7 +139,7 @@ export default function App() {
             </nav>
             {/* === Resume Button === */}
             <a
-              href="/Resume.pdf"
+              href="/resume.pdf"
               download
               className=" text-amber-300  px-4 py-2 border-2 border-blue-900 rounded-full hover:bg-blue-300 transition font-bold"
             >
