@@ -739,7 +739,7 @@ const SKILL_GROUPS = [
   { 
     category: "Full-Stack Engine", 
     icon: <FaCode className="text-teal-400" />, 
-    items: ["React", "Next.js", "Node.js", "PHP", "MySQL", "Supabase"] 
+    items: ["React", "Next.js","TypeScript","JavaScrit","Prisma", "Node.js", "PHP", "MySQL", "PostgreSQL"] 
   },
   { 
     category: "Creative Direction", 
@@ -763,7 +763,7 @@ const PROJECTS = [
     img: "/mcmedia.PNG"
   },
   {
-    title: "MarvelMarts Shopping",
+    title: "MarvelMarts E-commerce",
     tags: ["React", "Supabase"],
     desc: "A scalable marketplace engine with complex filtering and secure vendor portals.",
     impact: "High-Conversion UX",
@@ -928,7 +928,7 @@ export default function App() {
              <div className="absolute inset-0 bg-teal-400/20 blur-[100px] rounded-full"></div>
              <div className="relative group">
                 <div className="absolute inset-0 border-2 border-amber-400 rounded-[3rem] translate-x-4 translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-500"></div>
-                <img src="/tayo3-small.png" alt="Tayo" className="relative z-10 w-80 h-[450px] object-cover rounded-[3rem] shadow-2xl transition-all duration-500" />
+                <img src="/tayo3-small.png" alt="Tayo" className="relative z-10 w-80 h-[450px] object-contain rounded-[3rem] shadow-2xl transition-all duration-500" />
              </div>
           </div>
         </div>
@@ -987,7 +987,7 @@ export default function App() {
             
             <div className="md:col-span-2 flex items-center justify-between p-4 bg-teal-400/5 rounded-2xl border border-teal-400/20 text-teal-400">
                 <span className="text-sm font-black">SECURITY: {captcha.question} =</span>
-                <input type="number" value={captchaAnswer} onChange={(e) => setCaptchaAnswer(e.target.value)} className="w-20 bg-white/10 p-2 rounded-xl text-center outline-none" required />
+                <input type="number" placeholder="Answer" value={captchaAnswer} onChange={(e) => setCaptchaAnswer(e.target.value)} className="w-20 bg-white/10 p-2 rounded-xl text-center outline-none" required />
             </div>
 
             <button type="submit" disabled={loading} className="md:col-span-2 py-5 bg-gradient-to-r from-amber-400 to-teal-400 text-indigo-950 font-black rounded-2xl uppercase tracking-widest shadow-2xl shadow-amber-400/20 hover:scale-105 transition-all disabled:opacity-50">
